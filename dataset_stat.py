@@ -19,7 +19,7 @@ for _ in classes:
 for ann in anns:
     CATEGORY[ann['defect_name']] += 1
 
-y = [v for v in CATEGORY.values()]  # [576, 2151, 2174, 1112, 8642, 331]
+y = [v for v in CATEGORY.values()]
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 

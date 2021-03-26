@@ -127,4 +127,4 @@ def f2coco(mode='train'):
 
 
 if __name__ == '__main__':
-    f2coco(mode='chy')
+    f2coco(mode='test')
