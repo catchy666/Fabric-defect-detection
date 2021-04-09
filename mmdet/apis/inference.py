@@ -179,9 +179,11 @@ def show_result_pyplot(model,
     """
     if hasattr(model, 'module'):
         model = model.module
-    img = model.show_result(img, result, score_thr=score_thr, show=False)
-    plt.figure(figsize=fig_size)
-    plt.imshow(mmcv.bgr2rgb(img))
-    plt.title(title)
-    plt.tight_layout()
-    plt.show(block=block)
+    # img = model.show_result(img, result, score_thr=score_thr, show=False)
+    img = model.show_result(img, result, score_thr=score_thr, show=False,
+                            out_file='predict.jpg')
+    # plt.figure(figsize=fig_size)
+    # plt.imshow(mmcv.bgr2rgb(img))
+    # plt.title(title)
+    # plt.tight_layout()
+    # plt.show(block=block)

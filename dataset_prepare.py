@@ -68,7 +68,7 @@ def move_defect_imgs():
 
 def move_normal_imgs():
     """
-    将所有正常（无瑕疵）图片移动至imgs_normal目录下 | 【4371 defect imgs】
+    将所有正常（无瑕疵）图片移动至imgs_normal目录下 | 【893 normal imgs】
     """
     print("Step 4 is working ...")
 
