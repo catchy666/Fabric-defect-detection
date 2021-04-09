@@ -74,7 +74,7 @@ class Fabric2COCO:
         area = (bbox[2] - bbox[0]) * (bbox[3] - bbox[1])
         if area <= 0:
             print(bbox)
-            input()
+            # input()
         points = [[bbox[0], bbox[1]], [bbox[2], bbox[1]], [bbox[2], bbox[3]], [bbox[0], bbox[3]]]
         annotation = {}
         annotation['id'] = self.ann_id
@@ -127,4 +127,4 @@ def f2coco(mode='train'):
 
 
 if __name__ == '__main__':
-    f2coco(mode='test')
+    f2coco(mode='train')
